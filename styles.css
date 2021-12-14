@@ -6,10 +6,12 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
-body {
+html {
   font-family: sans-serif;
   text-align: center;
+  color: #ffffff;
   background: linear-gradient(#134d71,#78a7c6, #f7e4bf);
   background-repeat:no-repeat;
   background-size: cover;
+  height: 100%;
 }
