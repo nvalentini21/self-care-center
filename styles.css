@@ -15,3 +15,39 @@ html {
   background-size: cover;
   height: 100%;
 }
+
+h1 {
+  font-size: medium;
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-size: small;
+}
+
+section{
+  padding-bottom: 70px;
+}
+.message-type {
+  color: black;
+  background-color: white;
+  height: 30px;
+  width: 40%;
+  margin: auto;
+  font-size: x-small;
+  padding-top: 5px;
+}
+
+.photo-message {
+  color: black;
+  background-color: white;
+  height: 80px;
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.svg-wrapper{
+  display:block;
+  margin:auto;
+}
