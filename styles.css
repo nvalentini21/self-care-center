@@ -45,7 +45,7 @@ label {
   margin-right: 50px;
 }
 
-.round-checkbox{
+.radio-check{
   margin-left: 25px;
 }
 .photo-message {
@@ -61,6 +61,10 @@ label {
 .svg-wrapper {
   display:block;
   margin:auto;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 button {
