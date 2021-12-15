@@ -1,10 +1,12 @@
 //Variables
 
 // QuerySelectors
-var btnReceiveMessage = document.querySelector('.recieve-button');
+var btnReceiveMessage = document.querySelector('.receive-button');
 var buddahArticle = document.querySelector('.photo-message');
 var messageArticle = document.querySelector ('.pop-message');
-
+var paragraphArticle = document.querySelector("p");
+var btnAffirmationRadio = document.querySelector("#affirmation-check")
+var btnMantraRadio = document.querySelector("#mantra-check")
 //Pages
 
 //Data Variables
@@ -23,6 +25,7 @@ var mantras = [
 "Every day I am getting healthier and stronger.",
 "I honor my body by trusting the signals that it sends me.",
 "I manifest perfect health by making smart choices.",
+"Kulia i ka Nu'u",
 ]
 
 var affirmations = [
@@ -43,6 +46,8 @@ var affirmations = [
 "I am the sky, the rest is weather.",
 ]
 
+var customMessages = [];
+
 //Event Listeners
 
 btnReceiveMessage.addEventListener('click', showMessage);
@@ -53,6 +58,11 @@ function getRandomIndex(array) {
 }
 
 function showMessage(){
-  buddahArticle.classList.toggle('hidden');
-  messageArticle.classList.toggle('hidden');
+  buddahArticle.classList.add('hidden');
+  messageArticle.classList.remove('hidden');
+  if (btnAffirmationRadio.checked === true){
+    paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];
+  } else if (btnMantraRadio.checked === true){
+    paragraphArticle.innerText = mantras[getRandomIndex(mantras)];
+  }
 }
