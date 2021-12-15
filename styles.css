@@ -15,3 +15,60 @@ html {
   background-size: cover;
   height: 100%;
 }
+
+h1 {
+  font-size: medium;
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-size: small;
+}
+
+section{
+  padding-bottom: 60px;
+}
+.message-type {
+  color: black;
+  background-color: white;
+  height: 30px;
+  width: 450px;
+  margin: auto;
+  font-size: x-small;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+label {
+  margin-left: 4px;
+  margin-right: 50px;
+}
+
+.radio-check{
+  margin-left: 25px;
+}
+.photo-message {
+  color: black;
+  background-color: white;
+  height: 80px;
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.svg-wrapper {
+  display:block;
+  margin:auto;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+button {
+  background: #134d71;
+  color: white;
+  margin-top: 30px;
+}
