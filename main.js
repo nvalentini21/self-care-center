@@ -13,6 +13,7 @@ var btnAddMessage = document.querySelector(".custom-button")
 var customMessageForm = document.querySelector('.custom-message')
 var btnCustomAffRadio = document.querySelector("#custom-affirmation-check")
 var btnCustomManRadio = document.querySelector('#custom-mantra-check')
+var btnSubmit = document.querySelector('#submit-button')
 //Pages
 
 //Data Variables
@@ -57,7 +58,8 @@ var customMessages = [];
 //Event Listeners
 
 btnReceiveMessage.addEventListener('click', showMessage);
-btnAddMessage.addEventListener('click', showCustom);
+btnAddMessage.addEventListener('click', showForm);
+btnSubmit.addEventListener('click', showCustom)
 
 //Functions + Event Handlers
 function getRandomIndex(array) {
@@ -76,7 +78,7 @@ function showMessage(){
   }
 }
 
-function showCustom(){
+function showForm(){
   event.preventDefault();
   console.log('Hello');
   messageForm.classList.add('hidden');
