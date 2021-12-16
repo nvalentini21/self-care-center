@@ -32,6 +32,21 @@ h2 {
 section{
   padding-bottom: 60px;
 }
+
+label {
+  margin-left: 4px;
+  margin-right: 50px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+button {
+  background: #134d71;
+  color: white;
+  margin-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .message-type {
   color: black;
   background-color: white;
@@ -42,13 +57,6 @@ section{
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 50px;
-}
-
-label {
-  margin-left: 4px;
-  margin-right: 50px;
-  font-style: italic;
-  font-weight: normal;
 }
 
 .radio-check{
@@ -93,13 +101,6 @@ label {
 
 .hidden{
   visibility: hidden;
-}
-
-button {
-  background: #134d71;
-  color: white;
-  margin-top: 30px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .hidden {
