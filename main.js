@@ -14,6 +14,7 @@ var customMessageForm = document.querySelector('.custom-message')
 var btnCustomAffRadio = document.querySelector("#custom-affirmation-check")
 var btnCustomManRadio = document.querySelector('#custom-mantra-check')
 var btnSubmit = document.querySelector('#submit-button')
+var inputField = document.querySelector('.custom-text')
 //Pages
 
 //Data Variables
@@ -83,4 +84,17 @@ function showForm(){
   buddahArticle.classList.add('hidden');
   messageArticle.classList.add('hidden');
   customMessageForm.classList.remove('hidden');
+}
+
+function showCustom(){
+  event.preventDefault()
+  customMessageForm.classList.add('hidden');
+  messageArticle.classList.remove('hidden');
+  if (btnCustomAffRadio.checked === true){
+    paragraphArticle.innerText = inputField.value
+  } else if (btnCustomManRadio.checked === true){
+    paragraphArticle.innerText = inputField.value
+  } else {
+    paragraphArticle.innerText = "Don't forget to select a message type!"
+  }
 }
