@@ -10,13 +10,25 @@
     <section>
         <form class="message-type">
           <input type="radio" class="radio-check" name="radio-check" id="affirmation-check">
-          <label for="affirmation-checkbox">mantra</label>
+          <label class="type-label" for="affirmation-checkbox">mantra</label>
           <input type="radio" class="radio-check" name="radio-check" id="mantra-check">
-          <label for="mantras-checkbox">affirmation</label>
+          <label class="type-label" for="mantras-checkbox">affirmation</label>
           <div>
             <button class="receive-button">Receive Message</button>
+            <button class="custom-button">Add Message</button>
           </div>
         </form>
+        <form class="custom-message hidden">
+          <input type="radio" class="radio-check" name="custom-radio-check" id="custom-affirmation-check">
+          <label class="type-label" for="affirmation-checkbox">mantra</label>
+          <input type="radio" class="radio-check" name="custom-radio-check" id="custom-mantra-check">
+          <label class="type-label" for="mantras-checkbox">affirmation</label>
+          <div>
+            <label for="custom-shiz" class="custom-label">Type message here:</label>
+            <input type="text" class="custom-text" name="custom-stuff" id="custom-shiz"></input>
+            <button class="receive-button" id="submit-button">Submit</button>
+          </div>
+      </form>
   </section>
     <section>
       <article class="photo-message">
@@ -24,6 +36,9 @@
       </article>
       <article class="pop-message hidden">
         <p>Hey love, you forgot to select a message type!</p>
+      </article>
+      <article class="error-message hidden">
+        <p> Error, please select message type!</p>
       </article>
     </section>
     <script type="text/javascript" src="main.js"></script>
