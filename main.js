@@ -80,7 +80,7 @@ function showMessage(){
 
 function showForm(){
   event.preventDefault();
-  console.log('Hello');
-  messageForm.classList.add('hidden');
+  buddahArticle.classList.add('hidden');
+  messageArticle.classList.add('hidden');
   customMessageForm.classList.remove('hidden');
 }
