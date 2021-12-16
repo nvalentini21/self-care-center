@@ -1,12 +1,17 @@
 //Variables
 
 // QuerySelectors
+var receiveMessageForm = document.querySelector('.message-type');
 var btnReceiveMessage = document.querySelector('.receive-button');
 var buddahArticle = document.querySelector('.photo-message');
 var messageArticle = document.querySelector ('.pop-message');
 var paragraphArticle = document.querySelector("p");
 var btnAffirmationRadio = document.querySelector("#affirmation-check")
 var btnMantraRadio = document.querySelector("#mantra-check")
+var btnAddMessage = document.querySelector(".custom-button")
+var customMessageForm = document.querySelector('.custom-message')
+var btnCustomAffRadio = document.querySelector("#custom-affirmation-check")
+var btnCustomManRadio = document.querySelector('#custom-mantra-check')
 //Pages
 
 //Data Variables
@@ -51,6 +56,7 @@ var customMessages = [];
 //Event Listeners
 
 btnReceiveMessage.addEventListener('click', showMessage);
+btnAddMessage.addEventListener('click', showCustom);
 
 //Functions + Event Handlers
 function getRandomIndex(array) {
@@ -61,9 +67,19 @@ function showMessage(){
   event.preventDefault();
   buddahArticle.classList.add('hidden');
   messageArticle.classList.remove('hidden');
+  customMessageForm.classList.add('hidden');
   if (btnAffirmationRadio.checked === true){
     paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];
   } else if (btnMantraRadio.checked === true){
     paragraphArticle.innerText = mantras[getRandomIndex(mantras)];
   }
+}
+
+function showCustom(){
+  event.preventDefault();
+  console.log('Hello');
+  buddahArticle.classList.add('hidden');
+  messageArticle.classList.add('hidden');
+  customMessageForm.classList.remove('hidden');
+  if(btnCustomAffRadio.checked === true){}
 }
