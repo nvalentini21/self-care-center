@@ -75,6 +75,17 @@ label {
   font-weight: normal;
 }
 
+.custom-message {
+  color: black;
+  background-color: white;
+  height: 80px;
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
 .svg-wrapper {
   display:block;
   margin:auto;
