@@ -4,6 +4,7 @@
 var receiveMessageForm = document.querySelector('.message-type');
 var btnReceiveMessage = document.querySelector('.receive-button');
 var buddahArticle = document.querySelector('.photo-message');
+var messageForm = document.querySelector('.message-type')
 var messageArticle = document.querySelector ('.pop-message');
 var paragraphArticle = document.querySelector("p");
 var btnAffirmationRadio = document.querySelector("#affirmation-check")
@@ -78,8 +79,6 @@ function showMessage(){
 function showCustom(){
   event.preventDefault();
   console.log('Hello');
-  buddahArticle.classList.add('hidden');
-  messageArticle.classList.add('hidden');
+  messageForm.classList.add('hidden');
   customMessageForm.classList.remove('hidden');
-  if(btnCustomAffRadio.checked === true){}
 }

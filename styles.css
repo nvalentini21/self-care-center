@@ -40,6 +40,10 @@ section{
   font-weight: normal;
 }
 
+.custom-label {
+  margin: auto;
+}
+
 button {
   background: #134d71;
   color: white;
@@ -84,13 +88,19 @@ button {
 }
 .custom-message {
   color: black;
-  background-color: #F2E4BE;
-  height: 80px;
-  width: 600px;
+  background-color: white;
+  height: 30px;
+  width: 450px;
   margin: auto;
-  padding-top: 20px;
+  /* font-size: x-small; */
   border-radius: 5px;
-  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.custom-label {
+  font-size: x-small;
+  margin-bottom:1px;
 }
 
 .error-message {
