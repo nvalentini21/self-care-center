@@ -58,6 +58,7 @@ function getRandomIndex(array) {
 }
 
 function showMessage(){
+  event.preventDefault();
   buddahArticle.classList.add('hidden');
   messageArticle.classList.remove('hidden');
   if (btnAffirmationRadio.checked === true){
