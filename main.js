@@ -14,6 +14,8 @@ var customMessageForm = document.querySelector('.custom-message')
 var btnCustomAffRadio = document.querySelector("#custom-affirmation-check")
 var btnCustomManRadio = document.querySelector('#custom-mantra-check')
 var btnSubmit = document.querySelector('#submit-button')
+var inputField = document.querySelector('.custom-text')
+var errorMessage = document.querySelector('.error-message')
 //Pages
 
 //Data Variables
@@ -59,28 +61,60 @@ var customMessages = [];
 
 btnReceiveMessage.addEventListener('click', showMessage);
 btnAddMessage.addEventListener('click', showForm);
-btnSubmit.addEventListener('click', showCustom)
+btnSubmit.addEventListener('click', function(){
+  showForm()
+  showCustom()
+  storeCustom()
+})
 
 //Functions + Event Handlers
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
+function displayMessage(){
+  if (btnAffirmationRadio.checked === true){
+    paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];
+  } else if (btnMantraRadio.checked === true){
+    paragraphArticle.innerText = mantras[getRandomIndex(mantras)];
+  }
+};
+
+function displayCustomMessage(){
+  if (btnCustomAffRadio.checked === true){
+    paragraphArticle.innerText = inputField.value
+  } else if (btnCustomManRadio.checked === true){
+    paragraphArticle.innerText = inputField.value
+  } else {
+    paragraphArticle.innerText = "Don't forget to select a message type! Click 'Add Message' to retry :)"
+  }
+};
 
 function showMessage(){
   event.preventDefault();
   buddahArticle.classList.add('hidden');
   messageArticle.classList.remove('hidden');
   customMessageForm.classList.add('hidden');
-  if (btnAffirmationRadio.checked === true){
-    paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];
-  } else if (btnMantraRadio.checked === true){
-    paragraphArticle.innerText = mantras[getRandomIndex(mantras)];
-  }
-}
+  displayMessage();
+};
 
 function showForm(){
   event.preventDefault();
-  console.log('Hello');
-  messageForm.classList.add('hidden');
+  buddahArticle.classList.add('hidden');
+  messageArticle.classList.add('hidden');
   customMessageForm.classList.remove('hidden');
-}
+};
+
+function showCustom(){
+  event.preventDefault()
+  customMessageForm.classList.add('hidden');
+  messageArticle.classList.remove('hidden');
+  displayCustomMessage();
+};
+
+function storeCustom(){
+  if (btnCustomAffRadio.checked === true){
+      affirmations.push(inputField.value)
+  } else if (btnCustomManRadio.checked === true){
+    mantras.push(inputField.value)
+  }
+};
