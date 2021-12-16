@@ -33,7 +33,7 @@ section{
   padding-bottom: 60px;
 }
 
-label {
+.type-label {
   margin-left: 4px;
   margin-right: 50px;
   font-style: italic;
@@ -82,8 +82,18 @@ button {
   border-radius: 5px;
   font-weight: normal;
 }
-
 .custom-message {
+  color: black;
+  background-color: #F2E4BE;
+  height: 80px;
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.error-message {
   color: black;
   background-color: white;
   height: 80px;
