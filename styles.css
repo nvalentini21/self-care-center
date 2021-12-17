@@ -49,6 +49,7 @@ button {
   color: white;
   margin-top: 30px;
   font-family: 'Quicksand', sans-serif;
+  border-radius: 5px
 }
 
 .message-type {
@@ -103,17 +104,6 @@ button {
 .custom-label {
   /* font-size: x-small; */
   margin-bottom:1px;
-}
-
-.error-message {
-  color: black;
-  background-color: white;
-  height: 80px;
-  width: 600px;
-  margin: auto;
-  padding-top: 20px;
-  border-radius: 5px;
-  font-weight: normal;
 }
 
 .svg-wrapper {
