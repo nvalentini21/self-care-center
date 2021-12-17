@@ -114,10 +114,9 @@ function storeCustom(){
   if (btnCustomAffRadio.checked === true){
       affirmations.push(inputField.value)
       console.log(affirmations.length)
-      // return (affirmations)
   } else if (btnCustomManRadio.checked === true){
     mantras.push(inputField.value)
     console.log(mantras.length)
-    // return (mantras)
+
   }
 };
