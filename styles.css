@@ -19,12 +19,17 @@ body {
 font-family: 'Quicksand', sans-serif;
 }
 
-h1 {
+/* h1 {
   font-size: medium;
   padding-bottom: 60px;
-}
+} */
 
 h2 {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+h3 {
   font-size: small;
 }
 
@@ -65,7 +70,7 @@ button {
 .radio-check{
   margin-left: 25px;
 }
-.photo-message {
+.photo-buddah {
   color: black;
   background-color: white;
   height: 80px;

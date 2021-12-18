@@ -3,7 +3,9 @@
 // QuerySelectors
 var receiveMessageForm = document.querySelector('.message-type');
 var btnReceiveMessage = document.querySelector('.receive-button');
-var buddahArticle = document.querySelector('.photo-message');
+var buddahArticle = document.querySelector('.photo-buddah');
+var mainPage = document.querySelector('.main-page')
+var nameGreeting = document.querySelector('.name')
 var messageForm = document.querySelector('.message-type')
 var messageArticle = document.querySelector ('.pop-message');
 var paragraphArticle = document.querySelector("p");
@@ -16,6 +18,9 @@ var btnCustomManRadio = document.querySelector('#custom-mantra-check')
 var btnSubmit = document.querySelector('#submit-button')
 var inputField = document.querySelector('.custom-text')
 var errorMessage = document.querySelector('.error-message')
+var loginPage = document.querySelector('.login-page')
+var nameInput = document.querySelector('.login-input')
+var btnEnter = document.querySelector('#name-button')
 //Pages
 
 //Data Variables
@@ -59,10 +64,11 @@ var customMessages = [];
 
 //Event Listeners
 
+btnEnter.addEventListener('click', enter);
 btnReceiveMessage.addEventListener('click', showMessage);
 btnAddMessage.addEventListener('click', showForm);
-btnSubmit.addEventListener('click', storeCustom)
-btnSubmit.addEventListener('click', showCustom)
+btnSubmit.addEventListener('click', storeCustom);
+btnSubmit.addEventListener('click', showCustom);
 
 
 //Functions + Event Handlers
@@ -120,3 +126,11 @@ function storeCustom(){
 
   }
 };
+
+function enter(){
+  loginPage.classList.add('hidden');
+  mainPage.classList.remove('hidden');
+  buddahArticle.classList.remove('hidden');
+  nameGreeting.innerText = `Greetings ${nameInput.value}! Generate a saying below to sparkle a little brighter today⭐️`;
+
+}
