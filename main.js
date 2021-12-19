@@ -4,23 +4,23 @@
 var receiveMessageForm = document.querySelector('.message-type');
 var btnReceiveMessage = document.querySelector('.receive-button');
 var buddahArticle = document.querySelector('.photo-buddah');
-var mainPage = document.querySelector('.main-page')
-var nameGreeting = document.querySelector('.name')
-var messageForm = document.querySelector('.message-type')
+var mainPage = document.querySelector('.main-page');
+var nameGreeting = document.querySelector('.name');
+var messageForm = document.querySelector('.message-type');
 var messageArticle = document.querySelector ('.pop-message');
 var paragraphArticle = document.querySelector("p");
-var btnAffirmationRadio = document.querySelector("#affirmation-check")
-var btnMantraRadio = document.querySelector("#mantra-check")
-var btnAddMessage = document.querySelector(".custom-button")
-var customMessageForm = document.querySelector('.custom-message')
-var btnCustomAffRadio = document.querySelector("#custom-affirmation-check")
-var btnCustomManRadio = document.querySelector('#custom-mantra-check')
-var btnSubmit = document.querySelector('#submit-button')
-var inputField = document.querySelector('.custom-text')
-var errorMessage = document.querySelector('.error-message')
-var loginPage = document.querySelector('.login-page')
-var nameInput = document.querySelector('.login-input')
-var btnEnter = document.querySelector('#name-button')
+var btnAffirmationRadio = document.querySelector("#affirmation-check");
+var btnMantraRadio = document.querySelector("#mantra-check");
+var btnAddMessage = document.querySelector(".custom-button");
+var customMessageForm = document.querySelector('.custom-message');
+var btnCustomAffRadio = document.querySelector("#custom-affirmation-check");
+var btnCustomManRadio = document.querySelector('#custom-mantra-check');
+var btnSubmit = document.querySelector('#submit-button');
+var inputField = document.querySelector('.custom-text');
+var errorMessage = document.querySelector('.error-message');
+var loginPage = document.querySelector('.login-page');
+var nameInput = document.querySelector('.login-input');
+var btnEnter = document.querySelector('#name-button');
 //Pages
 
 //Data Variables
@@ -41,7 +41,7 @@ var mantras = [
   "The only constant is change.",
   "Onward and upward.",
   "I am the sky, the rest is weather.",
-]
+];
 
 var affirmations = [
   "I forgive myself and set myself free.",
@@ -58,7 +58,7 @@ var affirmations = [
   "I honor my body by trusting the signals that it sends me.",
   "I manifest perfect health by making smart choices.",
   "Kulia i ka Nu'u",
-]
+];
 
 var customMessages = [];
 
@@ -72,9 +72,11 @@ btnSubmit.addEventListener('click', showCustom);
 
 
 //Functions + Event Handlers
+
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
-}
+};
+
 function displayMessage(){
   if (btnAffirmationRadio.checked){
     paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];

@@ -13,29 +13,24 @@ html {
   background-repeat:no-repeat;
   background-size: cover;
   height: 100%;
-}
+};
 
 body {
 font-family: 'Quicksand', sans-serif;
 }
 
-/* h1 {
-  font-size: medium;
-  padding-bottom: 60px;
-} */
-
 h2 {
   font-size: medium;
   font-weight: lighter;
-}
+};
 
 h3 {
   font-size: small;
-}
+};
 
 section{
   padding-bottom: 60px;
-}
+};
 
 button {
   background: #134d71;
@@ -43,18 +38,18 @@ button {
   margin-top: 30px;
   font-family: 'Quicksand', sans-serif;
   border-radius: 5px
-}
+};
 
 .type-label {
   margin-left: 4px;
   margin-right: 50px;
   font-style: italic;
   font-weight: normal;
-}
+};
 
 .custom-label {
   margin: auto;
-}
+};
 
 .message-type {
   color: black;
@@ -65,11 +60,12 @@ button {
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 50px;
-}
+};
 
 .radio-check{
   margin-left: 25px;
-}
+};
+
 .photo-buddah {
   color: black;
   background-color: white;
@@ -78,7 +74,7 @@ button {
   margin: auto;
   padding-top: 20px;
   border-radius: 5px;
-}
+};
 
 .pop-message {
   color: black;
@@ -89,7 +85,8 @@ button {
   padding-top: 20px;
   border-radius: 5px;
   font-weight: normal;
-}
+};
+
 .custom-message {
   color: black;
   background-color: white;
@@ -99,17 +96,17 @@ button {
   padding-top: 20px;
   border-radius: 5px;
   font-weight: normal;
-}
+};
 
 .custom-text {
   font-family: 'Quicksand', sans-serif;
-}
+};
 
 .svg-wrapper {
   display:block;
   margin:auto;
-}
+};
 
 .hidden {
   display: none!important;
-}
+};
