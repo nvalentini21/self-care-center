@@ -76,17 +76,17 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 function displayMessage(){
-  if (btnAffirmationRadio.checked === true){
+  if (btnAffirmationRadio.checked){
     paragraphArticle.innerText = affirmations[getRandomIndex(affirmations)];
-  } else if (btnMantraRadio.checked === true){
+  } else if (btnMantraRadio.checked){
     paragraphArticle.innerText = mantras[getRandomIndex(mantras)];
   }
 };
 
 function displayCustomMessage(){
-  if (btnCustomAffRadio.checked === true){
+  if (btnCustomAffRadio.checked){
     paragraphArticle.innerText = inputField.value
-  } else if (btnCustomManRadio.checked === true){
+  } else if (btnCustomManRadio.checked){
     paragraphArticle.innerText = inputField.value
   } else {
     paragraphArticle.innerText = "Don't forget to select a message type! Click 'Add Message' to retry :)"
@@ -117,13 +117,12 @@ function showCustom(){
 
 function storeCustom(){
   event.preventDefault();
-  if (btnCustomAffRadio.checked === true){
+  if (btnCustomAffRadio.checked){
       affirmations.push(inputField.value)
       console.log(affirmations.length)
-  } else if (btnCustomManRadio.checked === true){
+  } else if (btnCustomManRadio.checked){
     mantras.push(inputField.value)
     console.log(mantras.length)
-
   }
 };
 
