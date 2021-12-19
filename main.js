@@ -131,6 +131,6 @@ function enter(){
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
   buddahArticle.classList.remove('hidden');
-  nameGreeting.innerText = `Greetings ${nameInput.value}! Generate a saying below to sparkle a little brighter today⭐️`;
+  nameGreeting.innerText = `Greetings ${nameInput.value}! Generate a message below to sparkle a little brighter today⭐️`;
 
 }
