@@ -93,7 +93,7 @@ function displayCustomMessage(){
   }
 };
 
-function showMessage(){
+function showMessage() {
   event.preventDefault();
   buddahArticle.classList.add('hidden');
   messageArticle.classList.remove('hidden');
@@ -101,21 +101,21 @@ function showMessage(){
   displayMessage();
 };
 
-function showForm(){
+function showForm() {
   event.preventDefault();
   buddahArticle.classList.add('hidden');
   messageArticle.classList.add('hidden');
   customMessageForm.classList.remove('hidden');
 };
 
-function showCustom(){
+function showCustom() {
   event.preventDefault()
   customMessageForm.classList.add('hidden');
   messageArticle.classList.remove('hidden');
   displayCustomMessage();
 };
 
-function storeCustom(){
+function storeCustom() {
   event.preventDefault();
   if (btnCustomAffRadio.checked){
       affirmations.push(inputField.value)
@@ -126,7 +126,7 @@ function storeCustom(){
   }
 };
 
-function enter(){
+function enter() {
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
   buddahArticle.classList.remove('hidden');
