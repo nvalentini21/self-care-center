@@ -1,24 +1,44 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
+# Welcome to the Self Care Center!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+Prepare to feel enlightened!
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+## About:
 
-## Learning Goals
+This project is an interactive website that allows the user to receive a random (yet perhaps universally designed?!) message at the touch of a button. Simply enter your name,  and find yourself in an endless amount of mantras and affirmations to carpe diem.
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+Within the center, you can also get your creative juices flowing by entering your own, personal, mantra/affirmation. This message will return to you, and also be added to the message database so you can continue to receive it over and over again.
 
-## Setup
+## Walk through:
 
+Below are a few snapshots of the self care center and the different feature the user can chose to use.
+
+Login Page:
+
+Main Page (includes pre-generated message):
+
+Custom Message Form:
+
+
+
+## Technologies used:
+
+This application was constructed using Javascript, HTML, and CSS.
+
+## To view:
+
+There are two options for viewing:
+
+To view this project in your own text editor:
 - Fork this project to your own Github account
 - Clone the repository to your local machine
 - `cd` into the project
 - Read this README thoroughly, then begin working!
 
+To view this project online:
+
+(https://nvalentini21.github.io/self-care-center/)
+
+The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html).
+
+##Contributors:
+[@nvalentini21](https://github.com/nvalentini21/self-care-center)
